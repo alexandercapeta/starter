@@ -10,7 +10,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
   if (!guess) {
     document.querySelector('.message').textContent = 'No number!';
-  } else if (guess === secretNumber) {
+  } else if (Number(guess) === secretNumber) {
     document.querySelector('.message').textContent = 'Correct Number!';
   } else if (guess > secretNumber) {
     document.querySelector('.message').textContent = 'Guess is Too high!';
