@@ -15,6 +15,7 @@ document.querySelector('.check').addEventListener('click', function () {
     // When the player wins.
 
     document.querySelector('body').style.backgroundColor = '#60b347';
+    document.querySelector('.number').style.width = '30 rem';
 
     document.querySelector('.message').textContent = 'Correct Number!';
     score++;
