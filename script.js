@@ -18,6 +18,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = score;
     } else {
       document.querySelector('.message').textContent = 'You lost the game!';
+      document.querySelector('.score').textContent = 0;
     }
   } else if (guess > secretNumber) {
     if (score > 1) {
@@ -26,6 +27,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = score;
     } else {
       document.querySelector('.message').textContent = 'You lost the game!';
+      document.querySelector('.score').textContent = 0;
     }
   } else if (guess < secretNumber) {
     if (score > 1) {
@@ -34,6 +36,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = score;
     } else {
       document.querySelector('.message').textContent = 'You lost the game!';
+      document.querySelector('.score').textContent = 0;
     }
   }
 });
